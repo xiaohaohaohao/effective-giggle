@@ -16,7 +16,8 @@ $count_c=0;
 $count_g=0;
 $count_t=0;
 $errors=0;
-foreach$base(@DNA){
+for($position=0;$position<length $DNA; ++$position){
+$base=substr($DNA,$position,1);
 if($base eq 'a'){
 ++$count_a;
 }
